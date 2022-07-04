@@ -40,7 +40,7 @@ public class NaverShopSearch {
         return response;
     }
 
-    // Step02: String 형태로 받은 JSON 데이터를 ItemDto 로 반환
+    // Step02: JSON 데이터를 ItemDto 로 반환
     public List<ItemDto> fromJSONtoItems(String result){
         JSONObject rjson = new JSONObject(result);
         JSONArray items = rjson.getJSONArray("items");

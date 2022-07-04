@@ -1,4 +1,5 @@
 package com.sparta.myselectshop.service;
+import com.sparta.myselectshop.models.ItemDto;
 import com.sparta.myselectshop.models.Product;
 import com.sparta.myselectshop.models.ProductMypriceRequestDto;
 import com.sparta.myselectshop.models.ProductRepository;
@@ -19,7 +20,7 @@ public class ProductService {
 
     @Transactional
     // pstmt.updateQuery();
-    public void update(Long id, ProductMypriceRequestDto requestDto){
+    public Long update(Long id, ProductMypriceRequestDto requestDto){
         // 가격정보를 물어오는 ProductMypriceRequestDto 를 받아와야 한다.
         Product product = productRepository.findById(id).orElseThrow(
                 // String sql =  SELECT * FROM PRODUCT WHERE 'ID' LIKE ?;
@@ -30,5 +31,16 @@ public class ProductService {
         product.update(requestDto);
         // ProductMypriceRequestDto requestDto
         // return id;
+        return id;
+    }
+
+    @Transactional
+    // pstmt.updateQuery();
+    public Long updateBySearch(Long id, ItemDto itemDto){
+        Product product = productRepository.findById(id).orElseThrow(
+                () -> new NullPointerException("해당 Id가 존재하지 않습니다!")
+        );
+        product.updateByItemDto(itemDto);
+        return id;
     }
 }

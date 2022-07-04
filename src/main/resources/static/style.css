@@ -7,8 +7,7 @@ body {
 }
 
 .search-itemDto {
-    max-width: 530px;
-    width: 95%;
+    width: 530px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -16,8 +15,7 @@ body {
 }
 
 .search-itemDto-left img {
-    max-width: 159px;
-    width: 95%;
+    width: 159px;
     height: 159px;
 }
 
@@ -29,8 +27,7 @@ body {
 }
 
 .search-itemDto-center div {
-    max-width: 280px;
-    width: 95%;
+    width: 280px;
     height: 23px;
     font-size: 18px;
     font-weight: normal;
@@ -86,8 +83,7 @@ body {
 
 input#query {
     padding: 15px;
-    max-width: 526px;
-    width: 95%;
+    width: 526px;
     border-radius: 2px;
     background-color: #e9ecef;
     border: none;
@@ -146,8 +142,7 @@ button {
 }
 
 .popup input {
-    max-width: 330px;
-    width: 95%;
+    width: 330px;
     height: 39px;
     border-radius: 2px;
     border: solid 1.1px #dee2e6;
@@ -167,8 +162,7 @@ button {
 }
 
 .popup button.cta {
-    max-width: 369.1px;
-    width: 95%;
+    width: 369.1px;
     height: 43.9px;
     border-radius: 2px;
     background-color: #15aabf;
@@ -176,14 +170,12 @@ button {
 }
 
 #search-area, #see-area {
-    max-width: 530px;
-    width: 95%;
+    width: 530px;
     margin: auto;
 }
 
 .nav {
-    max-width: 530px;
-    width: 95%;
+    width: 530px;
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -215,20 +207,17 @@ button {
 }
 
 .product-card {
-    max-width: 300px;
-    width: 95%;
+    width: 300px;
     margin: auto;
     cursor: pointer;
 }
 
 .product-card .card-header {
-    max-width: 300px;
-    width: 95%;
+    width: 300px;
 }
 
 .product-card .card-header img {
-    max-width: 300px;
-    width: 95%;
+    width: 300px;
 }
 
 .product-card .card-body {

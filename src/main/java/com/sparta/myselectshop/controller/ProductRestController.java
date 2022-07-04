@@ -5,13 +5,12 @@ package com.sparta.myselectshop.controller;
  */
 
 import com.sparta.myselectshop.models.Product;
+import com.sparta.myselectshop.models.ProductMypriceRequestDto;
 import com.sparta.myselectshop.models.ProductRepository;
 import com.sparta.myselectshop.models.ProductRequestDto;
+import com.sparta.myselectshop.service.ProductService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,6 +22,7 @@ public class ProductRestController {
     private final ProductRepository productRepository;
     // POST, PUT, DELETE 기능을 수행하는 ProductRepository Interface 상속
     // Hey, REST CON! This is essentially required method!
+    private final ProductService productService;
 
     // 등록된 전체 상품 목록 조회 (GET)
     @GetMapping("/api/products")
@@ -42,6 +42,11 @@ public class ProductRestController {
         /* productRepository.save(product);
          * return product;
           */
+    }
 
+    // 관심상품 최저가 (myprice) 설정 (PUT)
+    @PutMapping("/api/products/{id}")
+    public Long updateProduct(@PathVariable Long id, @RequestBody ProductMypriceRequestDto requestDto) {
+        return productService.update(id, requestDto);
     }
 }
