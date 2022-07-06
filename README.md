@@ -7,4 +7,5 @@
 6. 상품의 가격 정보는 매일 오전 5시에 일괄적으로 업데이트 된다.<br/>
 <hr/>
 상세한 코드리뷰는 다음 링크 참조 바람<br/>
-https://codeotaku.tistory.com/33
+https://codeotaku.tistory.com/33<br/>
+Localhost 구축 완료 (220704)
