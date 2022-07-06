@@ -53,7 +53,7 @@ function execSearch() {
 
     // 2. 검색창 입력값을 검사하고, 입력하지 않았을 경우 focus.
     if (query == '') {
-        alert('검색어를 입력해주세요');
+        alert('검색어를 입력해라, 아쎄이!');
         $('#query').focus();
         // Blinking on Keyword Search-Box
         return;
@@ -187,7 +187,7 @@ function setMyprice() {
     let myprice = $('#myprice').val();
     // 2. 만약 값을 입력하지 않았으면 alert를 띄우고 중단한다.
     if (myprice == '') {
-        alert('올바른 가격을 입력해주세요!');
+        alert('지금 나랑 장난치나? 아쎄이?');
         return;
     }
     // 3. PUT /api/product/${targetId} 에 data를 전달한다.
@@ -200,7 +200,7 @@ function setMyprice() {
             // 4. 모달을 종료한다. $('#container').removeClass('active');
             $('#container').removeClass('active');
             // 5. 성공적으로 등록되었음을 알리는 alert를 띄운다.
-            alert('성공적으로 등록되었습니다!');
+            alert('성공적으로 등록되었다! 따흐흑..');
             // 6. 창을 새로고침한다. window.location.reload();
             window.location.reload();
         }
