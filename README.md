@@ -8,4 +8,5 @@
 <hr/>
 상세한 코드리뷰는 다음 링크 참조 바람<br/>
 https://codeotaku.tistory.com/33<br/>
-Localhost 구축 완료 (220704)
+Localhost 구축 완료 (220704)<br/>
+Domain 서버 구축 완료! (220706)
